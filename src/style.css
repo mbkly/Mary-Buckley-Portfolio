@@ -53,7 +53,7 @@ h3 {
   max-width: 100%;
 }
 
-.surfBettyButton {
+.secondaryLink {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
