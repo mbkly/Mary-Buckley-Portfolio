@@ -25,8 +25,7 @@
 }
 
 body {
-  margin-top: 100px;
-  margin: 0;
+  margin: 100px 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
@@ -84,6 +83,10 @@ p {
   color: white;
 }
 
+.contact-link:hover {
+  color: white;
+}
+
 .about-link {
   background: white;
   color: var(--primary-color);
@@ -98,6 +101,10 @@ p {
   border: 1px solid var(--primary-color);
   border-radius: 10px;
   text-decoration: none;
+}
+
+.secondaryLink:hover {
+  color: white;
 }
 
 .homepage-link {
@@ -141,6 +148,7 @@ p {
 
   h1 {
     font-size: 48px;
+    line-height: 1.5;
   }
 
   h2 {
