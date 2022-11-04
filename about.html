@@ -17,11 +17,14 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/8f6df270b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
+    <a href="/" id="page-top"></a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Mary Buckley</a>
         <button
           class="navbar-toggler"
@@ -48,12 +51,13 @@
               <a class="nav-link" href="work.html">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <div class="container mt-5">
     <h2 id="header">Hi I am Mary Buckley</h2>
     <h3>Front-end developer from Seattle, USA</h3>
     <div class="about-paragraphs text-center">
@@ -63,6 +67,8 @@
         alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
         blanditiis harum.
       </p>
+      <h5>“Not all those who wander are lost."- J.R.R Tolkien</h5>
+    </div>
     </div>
     <div class="container">
       <div class="row">
@@ -87,9 +93,25 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="mt-5">
-      <h2>📮 Contact me</h2>
-      <a href="mailto:mary@bkly.org" class="email-link">mary@bkly.org</a>
+  <footer>
+    <div class="d-flex justify-content-center mt-5">
+      <a href="mailto:mary@bkly.org" class="email-link" alt="Send email to mary@bkly.org">📮 mary@bkly.org
+      </a>
     </div>
-  </body>
+    <div class="social-links d-flex justify-content-center mb-5">
+    <a href="https://www.linkedin.com/in/mary-buckley-a6aa69a2/" alt="Link to LinkedIn" target="_blank">
+      <i class="fab fa-linkedin-in fa-2x"></i>
+    </a>
+    <a href="https://github.com/mbkly" target="_blank" alt="Link to GitHub">
+     <i class="fab fa-github fa-2x"></i>
+    </a> 
+    <a href="https://twitter.com/mbkly26" target="_blank" alt="Link to Twitter">
+     <i class="fab fa-twitter fa-2x"></i>
+    </a> 
+  </div>
+  </footer>
+  <a href="#page-top" id="topBtn"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
+
+  <script src="/src/script.js"></script>
+ </body>
 </html>
