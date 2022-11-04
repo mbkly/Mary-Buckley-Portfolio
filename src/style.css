@@ -1,21 +1,16 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
+  --tertiary-color: darkslategray;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-font-family: "Poppins", serif;
+  --secondary-font-family: "Playfair Display", serif;
 }
 
 .heading-title {
   background-color: var(--secondary-color);
   margin-bottom: 40px;
   padding-top: 1px;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
 }
 
 .navbar {
@@ -29,10 +24,13 @@
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
+.subhead-purple {
+  color: var(--primary-color);
+}
 
 body {
   margin: 100px 0;
-  font-family: "Poppins", serif;
+  font-family: var(--primary-font-family);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -79,12 +77,14 @@ h5 {
 
 #index-name {
   color: darkslategray;
+  font-weight: bold;
 }
 
 p {
   font-family: "Playfair Display", serif;
   font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .navigation-links {
@@ -101,14 +101,55 @@ p {
   text-transform: capitalize;
 }
 
+a.active,
+#active {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+  transition: all 150ms ease-in-out;
+}
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 10px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
 .contact-link:hover {
   color: white;
+  transition: all 150ms ease-in-out;
+}
+
+#contact-box {
+  display: flex;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px 70px;
+  margin-bottom: 55px;
+  margin-top: 35px;
+}
+
+#contact-btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  margin-left: 160px;
+  margin-top: 35px;
 }
 
 .about-link {
@@ -137,12 +178,8 @@ p {
   display: block;
 }
 
-.about-paragraphs {
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
+.profile-quote {
+  text-align: center;
 }
 
 #surf-bettys {
@@ -158,11 +195,27 @@ p {
   justify-content: center;
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .email-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+#topBtn {
+  color: var(--primary-color);
+  position: fixed;
+  bottom: 15px;
+  float: right;
+  right: 18.5%;
+  left: 95%;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 15px;
+  font-family: var(--primary-font-family);
 }
 
 @media (max-width: 576px) {
