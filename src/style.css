@@ -10,6 +10,7 @@
 .heading-title {
   background-color: var(--secondary-color);
   margin-bottom: 40px;
+  padding-bottom: 10px;
   padding-top: 1px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 body {
-  margin: 100px 0;
+  margin: 0 auto;
   font-family: var(--primary-font-family);
   font-size: 1rem;
   font-weight: 400;
@@ -116,7 +117,11 @@ a:hover {
   color: white;
 }
 
-footer .social-links a {
+.social-links {
+  margin: 50%;
+}
+
+.social-links a {
   margin: 0 20px;
   color: var(--primary-color);
   background: var(--secondary-color);
@@ -126,7 +131,7 @@ footer .social-links a {
   transition: all 100ms ease-in-out;
 }
 
-footer .social-links a:hover {
+.social-links a:hover {
   background: var(--primary-color);
   color: white;
 }
