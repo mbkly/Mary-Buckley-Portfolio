@@ -169,6 +169,10 @@ a:hover {
   border: 1px solid var(--primary-color);
 }
 
+.about-me-bio {
+  font-size: 14px;
+}
+
 .secondaryLink {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
