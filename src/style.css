@@ -162,13 +162,14 @@ a:hover {
   transition: all 150ms ease-in-out;
 }
 
-#contact-box {
+.contact-box {
   display: flex;
   background: var(--secondary-color);
   border-radius: 10px;
   padding: 30px 70px;
   margin-bottom: 55px;
   margin-top: 35px;
+  margin-left: 20px;
 }
 
 #contact-btn {
@@ -248,7 +249,7 @@ a:hover {
   font-family: var(--primary-font-family);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 579px) {
   body {
     text-align: center;
   }
@@ -273,7 +274,13 @@ a:hover {
   .email-link {
     font-size: 14px;
   }
+
   #topBtn {
     display: none;
+  }
+
+  #contact-btn {
+    margin-left: -10px;
+    font-size: small;
   }
 }
