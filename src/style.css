@@ -266,7 +266,9 @@ a:hover {
   h3 {
     font-size: 12px;
   }
-
+  h5 {
+    font-size: 6px;
+  }
   p {
     font-size: 9px;
   }
